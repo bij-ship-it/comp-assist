@@ -23,6 +23,7 @@
   "devDependencies": {
     "@tailwindcss/vite": "^4.2.2",
     "tailwindcss": "^4.2.2",
+    "vercel": "^51.2.1",
     "vite": "^8.0.8"
   }
 }
