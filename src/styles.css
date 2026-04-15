@@ -21,6 +21,7 @@
   --color-warm-500: #eab308;
 
   --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "Libre Franklin", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @layer base {
@@ -30,6 +31,12 @@
 
   body {
     @apply font-sans text-gray-700 antialiased;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    letter-spacing: -0.015em;
+    font-optical-sizing: auto;
   }
 }
 
