@@ -1,34 +1,35 @@
-# Compensation Assistance Services - Website
+# Compensation Assistance Services
 
-Modern redesign of the Compensation Assistance Services (CAS) website. Built with Vite and Tailwind CSS.
+Website for [Compensation Assistance Services](https://comp-assist.vercel.app) (CAS) — Australia's leading vocational and functional assessment provider.
 
-## Development
+## Quick start
 
 ```bash
 npm install
-npm run dev
+npm run dev     # http://localhost:5173
 ```
 
-## Build
+## Deploy
 
 ```bash
 npm run build
-npm run preview
+npx vercel --prod --yes
 ```
 
-## Pages
+## Stack
 
-- **Home** - Hero, services overview, about, why CAS, CTA
-- **Services** - Overview of all 7 assessment services
-- **Earning Capacity** - Medico-legal earning capacity assessments
-- **Functional Assessments** - Functional capacity evaluations
-- **Workplace Assessments** - Workplace evaluation services
-- **Employability Assessments** - Employment options identification
-- **Vocational Assessments** - Work options and career paths
-- **Labour Market Research** - Labour market analysis and earnings
-- **Pre-Employment Medicals** - Baseline health assessments
-- **Our Team** - Professional qualifications and expertise
-- **Coverage** - Australia-wide service areas
-- **Refer** - Referral submission form
-- **Contact** - Contact information and form
-- **Privacy Policy** - Privacy and data handling
+- **Vite** — static multi-page build
+- **Tailwind CSS v4** — styling via `@tailwindcss/vite`
+- **Vercel** — hosting with clean URLs
+- **Libre Franklin** — headings / **Inter** — body
+
+## Structure
+
+```
+├── *.html              # 14 pages (Vite MPA entry points)
+├── src/                # JS + CSS source
+├── public/             # Static assets served at /
+├── assets/brand/       # Source brand files (not served)
+├── vite.config.js      # Build config
+└── CLAUDE.md           # Project context for Claude Code
+```
